@@ -1,0 +1,880 @@
+@font-face {
+    font-family: "1 font family selected";
+    src: url(fonts/Edu_TAS_Beginner/EduTASBeginner-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "montserrat" ;
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+
+.body-index{
+    margin: 0;
+    padding: 0;
+    background: #004357;
+    background: -webkit-linear-gradient(177deg, #004357 0%, #000000 100%);
+    background: linear-gradient(177deg, #004357 0%, #000000 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.navbar-index{
+    margin: auto;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat( 5, 1fr);
+}
+
+.logo{
+    width: 90%;
+    height: 60%;
+    grid-row: 1/2;
+    grid-column: 1/1;
+    font-family: "montserrat" ;
+    font-weight: 500;
+    font-size: 25px;
+    color: #ffffff;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.iniciar-sesion{
+    width: 100%;
+    height: 60%;
+    grid-row: 1/2;
+    grid-column: 3/3;
+    color: #ffffff;
+    font-family: "montserrat" ;
+    text-decoration: none;
+    font-size: 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: right;
+    display: flex;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iniciar-sesion:hover{
+    color: #007bff;
+}
+
+.comenzar{    
+    width: 70%;
+    height: 40%;
+    padding: 2%;
+    color: #ffffff;
+    grid-row: 1/2;
+    grid-column: 4/6;
+    font-family: "montserrat" ;
+    font-weight: 500;
+    font-size: 20px;
+    margin: auto;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    background-color: #003f5f;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.comenzar:hover, .presentacion-comenzar:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.container-resentacion{
+    width: 100%;
+    height: 700px;
+    background: url("img/mujer-con-tarjeta-de-credito-y-computadora\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat( 5, 1fr);
+    grid-template-rows: repeat( 4, 1fr);
+}
+
+.presentacion{
+    width: 90%;
+    height: 100%;
+    grid-row: 1/5;
+    grid-column: 1/4;
+    background: #004357;
+    background: -webkit-linear-gradient(329deg, #004357 0%, #000000 100%);
+    background: linear-gradient(329deg, #004357 0%, #000000 100%);
+    border-radius: 25% 0% 75% 25% / 0% 0% 67% 0%;
+    backdrop-filter: blur(40px);
+    z-index: 2;
+}
+
+.presentacion-text{
+    width: 80%;
+    height: 100%;
+    font-family: "montserrat" ;
+    padding: 11% 10% 10% 10%;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+.presentacion-text h1{
+    font-weight: 400;
+}
+
+.presentacion-text h2{
+    font-weight: 200;
+}
+
+.presentacion-comenzar{
+    position: absolute;
+    width: 30%;
+    height: 25px;
+    padding: 2%;
+    color: #ffffff;
+    font-family: "montserrat" ;
+    font-weight: 500;
+    font-size: 20px;
+    margin: auto;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    background-color: #003f5f;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.propuesta{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background-color: #ff000000;
+    display: grid;
+    grid-template-columns: repeat( 6, 1fr);
+    grid-template-rows: repeat( 4, 1fr);
+
+}
+
+
+.propuesta-text{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/5;
+    grid-column: 3/5;
+    background-color: rgba(47, 255, 0, 0);
+    font-family: "montserrat" ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    color: #ffffff;
+
+
+
+}
+.propuesta-title h1{
+    text-align: center;
+}
+
+.propuesta-list{
+    padding: 0 10% 0 10%;
+} 
+
+
+.animacion{
+    width: 600px;
+    height: 600px;
+    grid-row: 1/5;
+    grid-column: 3/5;
+    background-color: #000000;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    z-index: -1;
+}
+
+
+@keyframes show{
+    0%{
+    opacity: 0;
+    scale: 25%;
+    }
+
+    50%{
+        scale: 50%;
+    }
+
+    100%{
+    opacity: 1;
+    scale: 100%;
+    background: #004357;
+    background: -webkit-linear-gradient(329deg, #004357 0%, #001f28 100%);
+    background: linear-gradient(329deg, #004357 0%, #001f28 100%);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    border: 2px solid white;
+    
+    }
+}
+
+
+.servicios{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+    background: url("https://eiposgrados.com/wp-content/uploads/2022/03/empresas-de-servicios.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat( 6, 1fr);
+    grid-template-rows: repeat( 4, 1fr);
+}
+
+.servicios-content{
+    width: 100%;
+    height: 100%;
+    font-family: "montserrat" ;
+    grid-row: 1/6;
+    grid-column: 3/7;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+}
+
+.servicios-text h2{
+    text-align: center;
+}
+
+.servicios-text{
+    width: 50%;
+    margin-left: 40%;
+    font-size: 20px;
+    color: #ffffff;
+} 
+
+.animacion-2{
+    width: 100%;
+    height: 600px;
+    grid-row: 1/6;
+    grid-column: 3/7;
+
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show-2;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    
+}
+
+@keyframes show-2{
+    0%{
+    opacity: 0;
+    scale: 25%;
+    clip-path: polygon(30.4% 0%, 100.1% 0%, 100% 30%, 100.1% 70%, 100.1% 47.3%, 93.6% 36.3%, 71.3% 0%, 34.9% 0%);
+
+
+    }
+
+    50%{
+        scale: 50%;
+        clip-path: polygon(30.4% 0%, 100.1% 0%, 100% 30%, 100.1% 70%, 100.1% 100.3%, 84% 100.3%, 71.3% 0%, 34.9% 0%);
+    }
+
+    100%{
+    opacity: 1;
+    scale: 100%;
+    background: #0043574f;
+    background: -webkit-linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    background: linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    clip-path: polygon(99.8% 0%, 100.1% 0%, 100% 30%, 100% 70%, 100.1% 100.3%, 63.2% 100.3%, 48% 99.3%, 24.6% 0%);
+    
+    }
+}
+
+.inportancia{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat( 7, 1fr);
+    grid-template-rows: repeat( 4, 1fr);
+    
+}
+
+.inportancia-content{
+    width: 100%;
+    height: 100%;
+    background-color: #0a12f200;
+    grid-row: 2/2;
+    grid-column: 2/4;
+    z-index: 2;
+}
+
+.inportancia-img{
+    margin-top: 10%;
+    width: 600px;
+    height: 80%;
+    grid-row: 1/3;
+    grid-column: 6/7;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show-4;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+.inportancia-text{
+    font-family: "montserrat" ;
+    font-size: 20px;
+}
+.inportancia-text h1{
+    text-align: center;
+}
+.animacion-3{
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    grid-row: 1/4;
+    grid-column: 1/5;
+
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show-3;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    
+}
+
+@keyframes show-3{
+    0%{
+    opacity: 0;
+    scale: 25%;
+    }
+
+    50%{
+        scale: 50%;
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    }
+
+    100%{
+    opacity: 1;
+    scale: 100%;
+    background: #0043574f;
+    background: -webkit-linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    background: linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    border: 2px solid white;
+    }
+}
+
+@keyframes show-4{
+    0%{
+    opacity: 0;
+    scale: 25%;
+    }
+
+    25%{
+    transform: translateX(-400px);
+    }
+
+    50%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+    opacity: 1;
+    
+    }
+}
+
+.obtener{
+    background: url("https://innovainternetmx.com/wp-content/uploads/noticias.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 200px;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat( 7, 1fr);
+    grid-template-rows: repeat( 4, 1fr);
+}
+
+
+.obtener-content{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/5;
+    grid-column: 5/8;
+    background: #0043574f;
+    background: -webkit-linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    background: linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    border-radius: 6% 0% 0% 63% / 53% 25% 25% 47%;
+    backdrop-filter: blur(40px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show-4;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+
+}
+
+.obtener-text{
+    width: 70%;
+    font-family: "montserrat";
+    font-size: 20px;
+}
+.obtener-text h2{
+    text-align: center;
+}
+
+footer {
+    background-color: #000000; 
+    color: #ecf0f1; 
+    padding: 20px;
+    text-align: center;
+    font-family: "montserrat";
+}
+
+.footer-contact h3 {
+    font-size: 24px;
+    margin-bottom: 15px;/
+}
+
+.footer-contact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.footer-contact ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-contact a {
+    color: #f39c12; 
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline; 
+}
+
+.footer-contact a:active {
+    color: #e67e22;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: #f39c12;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+/*-------------------------------styles de registrar---------------------------*/
+
+
+.body-registrar{
+    background: #004357;
+    background: -webkit-linear-gradient(177deg, #004357 0%, #000000 100%);
+    background: linear-gradient(177deg, #004357 0%, #000000 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container-form{
+    margin: 15% auto;
+    background: #ffffff0d;
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    width: 40%;
+    height: 350px;
+    display: flex;
+}
+
+.content-form{
+    width: 60%;
+    padding: 0 5% 0 5%;
+    animation: animacion-input 0.9s ease-out;
+    animation-delay: 0.7s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+
+}
+
+.animated-title{
+    text-align: center;
+    padding: 0 50px 0 50px;
+    background: #004357;
+    background: -webkit-linear-gradient(331deg, #004357 0%, #001f28 100%);
+    background: linear-gradient(331deg, #004357 0%, #001f28 100%);
+    border-radius: 6% 0% 0% 63% / 53% 25% 25% 47%;
+    color: #ffffff;
+    width: 40%;
+    height: 100%;
+    padding-top: 100px;
+    border-radius: 0% 50% 48% 0% / 51% 47% 49% 49%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    animation: animacion-title 0.9s ease-out;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes animacion-title {
+    0%{
+    transform: translateX( 400px);
+    
+    }
+    50% {
+        margin-top: 15px;
+        width: 40%;
+        height: 90%;
+        border-radius: 52% 48% 47% 52% / 51% 51% 49% 47%;
+    }
+    
+    100% {
+        
+        width: 40%;
+        border-radius: 0% 50% 48% 0% / 51% 47% 49% 49%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        
+    }
+}
+
+@keyframes animacion-input {
+    0%{
+        transform: translateX( 20px);
+    
+    }
+    100%{
+        visibility: visible;
+        
+    }
+}
+
+
+.animated-title-2{
+    text-align: center;
+    padding: 0 50px 0 50px;
+    background: #004357;
+    background: -webkit-linear-gradient(331deg, #004357 0%, #001f28 100%);
+    background: linear-gradient(331deg, #004357 0%, #001f28 100%);
+    color: #ffffff;
+    width: 40%;
+    height: 100%;
+    padding-top: 100px;
+    border-radius: 52% 0% 0% 53% / 51% 47% 52% 49%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: animacion-title-2 0.9s ease-out;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes animacion-title-2 {
+    0%{
+    transform: translateX( -400px);
+    
+    }
+
+    50% {
+        width: 40%;
+        border-radius: 52% 48% 47% 52% / 51% 51% 49% 47%;
+    }
+
+    100% {
+        border-radius: 52% 0% 0% 53% / 51% 47% 52% 49%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+}
+
+
+
+.input-form{
+    margin-top: 150px;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 40px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.fa-user, .fa-envelope, .fa-phone, .fa-money-bill, .fa-lock{
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left: 70%;
+    color: #ffffff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: .3s;
+    background: rgba(0, 0, 0, 0);
+    padding: 0 20px 60px;
+}
+
+
+.label-form{
+    position: absolute;
+    transform: translateY(-49%);
+    color: #ffffff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: .3s;
+    background: rgba(0, 0, 0, 0);
+    padding: 0 20px 60px;
+}
+
+.input-form:focus {
+    border: none;
+    border: 2px solid #ffffff;
+}
+
+.input-form:focus ~ .label-form,
+.input-form:valid ~ .label-form {
+    font-size: 17px;
+    background: #19182500;
+    padding: 0 25px 145px;
+}
+
+.btn-form{
+    margin: 10px 25% 20px 25%;
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+    color: #ffffff;
+    border: none;
+    background: #004357;
+    background: -webkit-linear-gradient(331deg, #004357 0%, #001f28 100%);
+    background: linear-gradient(331deg, #004357 0%, #001f28 100%);
+    border: 1px solid white;
+}
+
+.btn-regresar-form{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*-----------------------------styles de nav-----------------------*/
+
+
+.navbar-user{
+    margin: auto;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat( 6, 1fr);
+}
+
+.logo-user a{
+    width: 90%;
+    height: 60%;
+    grid-row: 1/2;
+    grid-column: 1/1;
+    font-family: "montserrat" ;
+    font-weight: 500;
+    font-size: 25px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.iniciar-sesion-user{
+    width: 100%;
+    height: 60%;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    color: #ffffff;
+    font-family: "montserrat" ;
+    text-decoration: none;
+    font-size: 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: right;
+    
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iniciar-sesion:hover{
+    color: #FF5C62;
+}
+
+.comenzar-user{    
+    width: 70%;
+    height: 70%;
+    padding: 2%;
+    color: #000000;
+    grid-row: 1/2;
+    grid-column: 5/7;
+    font-family: "montserrat" ;
+    font-weight: 500;
+    font-size: 20px;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cerrar-user{
+    width: 80%;
+    height: 40%;
+    color: #000000;
+    grid-row: 1/2;
+    grid-column: 4/5;
+    font-family: "montserrat" ;
+    font-weight: 500;
+    font-size: 20px;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.container-editar{
+    width: 40%;
+    height: 650px;
+    background: #0043574f;
+    background: -webkit-linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    background: linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    border-radius: 25% 0% 75% 25% / 0% 0% 67% 0%;
+    backdrop-filter: blur(40px);
+    margin: 10% auto;
+    padding: 50px 5% 50px 5%;
+    border-radius: 15px;
+}
+
+.container-editar h1{
+    text-align: center;
+}
+
+
+
+.input-form-editar{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 40px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.container-vista-user{
+    width: 40%;
+    height: 40%;
+    background: #0043574f;
+    background: -webkit-linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    background: linear-gradient(329deg, #004357c7 0%, #001f28 100%);
+    border-radius: 25% 0% 75% 25% / 0% 0% 67% 0%;
+    backdrop-filter: blur(40px);
+    margin: 20px auto;
+    padding: 50px 5% 50px 5%;
+    border-radius: 15px;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f3f300;
+}
+
+.resumen-perfil, .estado-reporte, .menu-usuario, .alertas, .recomendaciones {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffffff00;
+}
+
+.barra-estado {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progreso {
+    height: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
